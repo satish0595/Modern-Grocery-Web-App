@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
 
         <div className='md:col-span-1 text-sm mt-8 md:mt-0 text-center md:text-left'>
-          <p>&copy; {new Date().getFullYear()} FreshMart. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} FreshMart| Designed by Satish. All rights reserved.</p>
         </div>
       </div>
     </footer>

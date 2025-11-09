@@ -43,7 +43,7 @@ const Shop = () => {
           <option value="Meat">Meat</option>
         </select>
         <div className='mb-4'>
-          <label>Price Range: ₹{priceRange[0]}-₹{priceRange[1]}</label>
+          <label>Price Range: €{priceRange[0]}-€{priceRange[1]}</label>
           <input type="range" min="0" max="500" value={priceRange[1]}
             onChange={(e) => setPriceRange([priceRange[0], Number(e.target.value)])}
           />
@@ -78,7 +78,7 @@ const Shop = () => {
             <option value="Meat">Meat</option>
           </select>
           <div className='mb-4 flex flex-col gap-2'>
-            <label>Price Range: ₹{priceRange[0]} - ₹{priceRange[1]}</label>
+            <label>Price Range: €{priceRange[0]} - €{priceRange[1]}</label>
             <input type="range" min="0" max="500" value={priceRange[1]}
               onChange={(e) => setPriceRange([priceRange[0], Number(e.target.value)])}
               className='w-[150px]'

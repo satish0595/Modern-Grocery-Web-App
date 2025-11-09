@@ -47,7 +47,7 @@ const CartComp = ({ isOpen, onClose }) => {
                                         <div>
                                             <h3 className='text-sm line-clamp-2'>{item.name}</h3>
                                             <p className='text-gray-600'>{item.quantity}</p>
-                                            <p className='text-gray-800'>₹{item.price} <span className='line-through text-gray-500'>₹{item.price + 10}</span></p>
+                                            <p className='text-gray-800'>€{item.price} <span className='line-through text-gray-500'>€{item.price + 10}</span></p>
                                         </div>
                                         <div className='flex items-center justify-center text-xl font-semibold px-4 py-1 rounded-md gap-3 mt-2 bg-green-600 text-white'>
                                             <button className='cursor-pointer' onClick={() => updateQuantity(cart, item.id, "decrease")}>-</button>
@@ -66,19 +66,19 @@ const CartComp = ({ isOpen, onClose }) => {
                             <h1 className='text-gray-800 font-bold text-xl'>Bill details</h1>
                             <div className='flex justify-between items-center'>
                                 <h1 className='flex gap-1 items-center text-gray-700'><span><LuNotebookText /></span>Items total</h1>
-                                <p>₹{totalPrice}</p>
+                                <p>€{totalPrice}</p>
                             </div>
                             <div className='flex justify-between items-center'>
                                 <h1 className='flex gap-1 items-center text-gray-700'><span><MdDeliveryDining /></span>Delivery charge</h1>
-                                <p className='text-green-600'><span className='text-gray-600 line-through'>₹25</span> FREE</p>
+                                <p className='text-green-600'><span className='text-gray-600 line-through'>€25</span> FREE</p>
                             </div>
                             <div className='flex justify-between items-center'>
                                 <h1 className='flex gap-1 items-center text-gray-700'><span><GiShoppingBag /></span>Handling charge</h1>
-                                <p className='text-green-600'>₹5</p>
+                                <p className='text-green-600'>€5</p>
                             </div>
                             <div className='flex justify-between items-center'>
                                 <h1 className='font-semibold text-lg'>Grand total</h1>
-                                <p className='font-semibold text-lg'>₹{totalPrice + 5}</p>
+                                <p className='font-semibold text-lg'>€{totalPrice + 5}</p>
                             </div>
                         </div>
                     )
@@ -97,7 +97,7 @@ const CartComp = ({ isOpen, onClose }) => {
                     <div className='bg-white p-5 rounded-md'>
                         <div className='bg-green-600 text-white w-full py-2 px-3 rounded-md flex justify-between items-center cursor-pointer'>
                             <div>
-                                <h1 className='font-semibold'>₹{totalPrice + 5}</h1>
+                                <h1 className='font-semibold'>€{totalPrice + 5}</h1>
                                 <h1 className='text-gray-100'>TOTAL</h1>
                             </div>
                             <div className='flex gap-1 items-center font-semibold'>

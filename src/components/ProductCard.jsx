@@ -31,7 +31,7 @@ const ProductCard = ({product}) => {
             <p className='text-sm mt-1 text-gray-500'>{product.category}</p>
             <h3 className='font-semibold text-sm mt-1 h-[40px] text-gray-800 line-clamp-2'>{product.name}</h3>
             <p className='text-sm text-gray-600 mt-1'>{product.quantity}</p>
-            <p className='font-bold mt-1 text-gray-700'>₹{product.price?.toFixed(2)}</p>
+            <p className='font-bold mt-1 text-gray-700'>€{product.price?.toFixed(2)}</p>
         </div>
       </div>
       <div className='p-4 pt-1'>
